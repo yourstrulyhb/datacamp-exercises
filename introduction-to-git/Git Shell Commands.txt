@@ -1,0 +1,27 @@
+# (Git) Shell Commands
+
+pwd - print working directory
+ls - list of all files in current directory
+	ls -a --shows hidden files
+cd - change directory
+
+nano <filename>   
+	Ctrl + O --save changes
+	Ctrl + X -- exit
+
+echo --create or edit a file
+	echo "Review records." > todo.txt -- writes new file
+	echo "Review records." >> todo.txt -- appends to existing file
+
+
+git --version
+
+
+
+## Saving files
+
+
+## Comparing files
+git diff <filename> --compare unstaged file
+git diff -r HEAD <filename> --compare staged file
+git diff -r HEAD --show difference of all files in the staging area
