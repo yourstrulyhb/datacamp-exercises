@@ -1,27 +1,75 @@
 # (Git) Shell Commands
 
-pwd - print working directory
-ls - list of all files in current directory
+CHAPTER I.
+1. pwd - print working directory
+2. ls - list of all files in current directory
 	ls -a --shows hidden files
-cd - change directory
+3. cd - change directory
 
-nano <filename>   
+4. nano <filename>   
 	Ctrl + O --save changes
 	Ctrl + X -- exit
 
-echo --create or edit a file
+5. echo --create or edit a file
 	echo "Review records." > todo.txt -- writes new file
 	echo "Review records." >> todo.txt -- appends to existing file
 
-
-git --version
-
+6. git --version
 
 
-## Saving files
+>>> Saving files
 
 
-## Comparing files
-git diff <filename> --compare unstaged file
-git diff -r HEAD <filename> --compare staged file
-git diff -r HEAD --show difference of all files in the staging area
+>>> Comparing files
+1. git diff <filename> --compare unstaged file
+
+2. git diff -r HEAD <filename> --compare staged file
+
+3. git diff -r HEAD --show difference of all files in the staging area
+
+
+
+CHAPTER II.
+>>> Storing data with Git
+1. git log
+2. git show <6-8 commit hash>
+
+
+>>> Viewing changes
+1. git diff -r HEAD
+	HEAD~1
+	HEAD~2
+	git show HEAD~3 	# Shows 4th most recent commit
+
+2. git diff 		# Compares changes between 2 commits
+	git diff <hash> <hash>
+	git diff HEAD~3 HEAD~2
+
+3. git annotate <filename>
+
+
+>>> Undoing changes to unstaged files
+1. git reset HEAD <filename> 		# unstage 1 file
+
+2. git reset HEAD 		# unstage all files
+
+3. git checkout -- <filename>		# Undo changes to unstaged file
+
+4. git checkout . 	# Undo changes to all unstaged files
+
+
+>>> Restoring and Reverting
+1. git log -3 	# limit logs to display to 3
+
+2. git log -<number_logs_to_display> <filename>
+
+3. git log --since='Month Day Year'	# restrict git log by date
+
+4. git log --since='Month Day Year' --until='Month Day Year'
+
+5. git checkout <commit_hash> <filename>	# Revert to a version from specific commit
+	git checkout HEAD~<number> <filename>
+
+6. git clean -n 	# List untracked files
+
+7. git clean -f	# Delete untracked files
