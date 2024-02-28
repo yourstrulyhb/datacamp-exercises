@@ -1,0 +1,13 @@
+>>> CONFIGURING GIT
+
+1. git config -–list -–show-
+2. git config --global user.email <email>
+3. git config --global --list
+4. git config --global alias.<alias_name> '<command_to_alias>'
+
+>>> BRANCHES
+5. git branch 		# show branches
+6. git checkout -b <branch_name>	# Create new branch
+7. git diff <branch_name1> <branch_name2>
+8. git checkout <branch_name>
+9. git merge <source> <destination>

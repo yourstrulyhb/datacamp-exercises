@@ -1,0 +1,17 @@
+
+
+>>> CLONING REPO
+1. git clone <local_repo_path or remote_url>
+	<repo_name (optional)>					# Clone a repo
+2. git remote add <name> <repo_path>				# Add remote
+3. git remote -v 							# List all remotes
+
+
+>>> GATHERING FROM A REMOTE
+1. git fetch origin main<destination_branch>
+2. git merge origin main 			# Sync content of repos
+3. git pull origin main 			# fetch and merge; can't pull if you have uncommitte dchanges
+
+
+>>> 
+1. git push origin main

@@ -15,6 +15,7 @@ class Document:
   def _count_words(self):
     return Counter(self.tokens)
 
+
 datacamp_tweets = 'Welcome to Datacamp! Kickstart start you journey with data!' # sample
 
 # create a new document instance from datacamp_tweets
