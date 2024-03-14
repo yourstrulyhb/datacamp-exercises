@@ -1,2 +1,2 @@
 # datacamp-exercises
-A repository of DataCamp Exercises
+A repository of DataCamp Exercises. Contains
